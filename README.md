@@ -40,6 +40,7 @@ protected function actingAsFirstUser();
 
 /**
  * Asserts that the response JSON contains the given path.
+ * Example: $this->seeJsonMatchesPath('$.user.email');
  *
  * @param  string $path
  * @return $this
@@ -49,8 +50,9 @@ protected function seeJsonMatchesPath($path);
 
 /**
  * Return value from the resulting JSON by path.
+ * Example: $email = $this->getValueFromJsonByPath('$.user.email');
  *
- * @param $path
+ * @param  string  $path
  * @return mixed
  */
 protected function getValueFromJsonByPath($path);

@@ -47,6 +47,7 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase {
 
     /**
      * Asserts that the response JSON contains the given path.
+	 * Example: $this->seeJsonMatchesPath('$.user.email')
      *
      * @param  string $path
      * @return $this
@@ -76,9 +77,11 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase {
 
 	/**
 	 * Return value from the resulting JSON by path.
+	 * Example: $email = $this->getValueFromJsonByPath('$.user.email');
 	 *
-	 * @param $path
+	 * @param  string $path
 	 * @return mixed
+	 * @throws PHPUnitException
 	 */
 	protected function getValueFromJsonByPath($path)
 	{
