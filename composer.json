@@ -1,5 +1,5 @@
 {
-    "name": "lanin/laravel-extend-tescase",
+    "name": "lanin/laravel-extend-testcase",
     "description": "Add more functionality to default Laravel 5.1 TestCase.",
     "keywords": ["laravel", "framework", "tests", "testcase", "phpunit"],
     "license": "MIT",
