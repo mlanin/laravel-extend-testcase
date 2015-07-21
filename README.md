@@ -21,6 +21,57 @@ All you have to do is to extend your base Seeder class with `\Lanin\TestCase\Tes
 class TestCase extends \Lanin\TestCase\TestCase
 ```
 
+## API
+
+```php
+/**
+ * Fin or create first user (id => 1).
+ *
+ * @return \Illuminate\Contracts\Auth\Authenticatable|static
+ */
+protected function firstUser();
+
+/**
+ * Act like the first user.
+ *
+ * @return $this
+ */
+protected function actingAsFirstUser();
+
+/**
+ * Asserts that the response JSON contains the given path.
+ *
+ * @param  string $path
+ * @return $this
+ * @throws PHPUnitException
+ */
+protected function seeJsonMatchesPath($path);
+
+/**
+ * Return value from the resulting JSON by path.
+ *
+ * @param $path
+ * @return mixed
+ */
+protected function getValueFromJsonByPath($path);
+
+/**
+ * Asserts that the response doesn't contain the given header.
+ *
+ * @param  string $headerName
+ * @return $this
+ */
+protected function dontSeeHeader($headerName);
+
+/**
+ * Asserts that the response doesn't contain the given cookie.
+ *
+ * @param  string $cookieName
+ * @return $this
+ */
+protected function dontSeeCookie($cookieName);
+```
+
 ## Contributing
 
 Please feel free to fork this package and contribute by submitting a pull request to enhance the functionalities.
