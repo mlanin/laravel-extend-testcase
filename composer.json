@@ -1,0 +1,25 @@
+{
+    "name": "lanin/laravel-extend-tescase",
+    "description": "Add more functionality to default Laravel 5.1 TestCase.",
+    "keywords": ["laravel", "framework", "tests", "testcase", "phpunit"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxim Lanin",
+            "email": "max@lanin.me",
+            "homepage": "http://lanin.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.1",
+        "phpunit/phpunit": "^4.7.6"
+    },
+    "autoload": {
+        "psr-4": {
+           "Lanin\\TestCase\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
